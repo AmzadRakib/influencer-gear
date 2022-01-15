@@ -1,0 +1,154 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.header-img:hover{
+        width: 500px;
+}
+
+.btn{
+    background-color: rgba(161, 13, 13, 0.801);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 20px;
+}
+
+
+/* main */
+main{
+    margin-top: 80px;
+}
+.main-heading{
+    text-align: center;
+}
+
+.grid-container2{
+    margin-left: 150px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+   
+}
+.rating{
+   color: #FCB161;
+}
+span{
+    color:black;
+}
+.products{
+    border-radius: 15px 15px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 10px 10px 10px  #f0f0f0;
+}
+
+.see-more{
+    text-align: right;
+    color: red;
+    font-weight: bold;
+    margin-right: 155px;
+    margin-top: 30px;
+}
+
+.grid-container3{
+    display: grid;
+}
+#bonus-part{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+#bonus-part img{
+    width: 70%;
+}
+#paragraph{
+    margin-right: 100px;
+}
+#bonus-part h1{
+    font-size: 24px;
+    font-weight: 800;
+
+}
+#bonus-part p{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+
+.footer{
+    text-align: center;
+    background-color: #0A0826;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    margin-top: 50px;
+}
+.font-item1{
+    margin-right: 10px;
+}
+.font-item2{
+    margin-right: 10px;
+}
+.font-item3{
+    margin-right: 10px;
+}
+
+
+/* responsive mobile */
+
+@media only screen and (max-width: 480px) {
+  .header{
+      text-align: center;
+  }
+ .grid-container{
+     grid-template-columns: auto;
+ }
+ .description{
+     text-align: center;
+ }
+.grid-container2{
+    grid-template-columns: repeat(1,1fr);
+}
+.main-heading{
+    text-align: center;
+}
+}
+
+
+  /* responsive tab */
+  @media only screen and (min-width: 481px) and (max-width: 768px){
+    .header{
+        text-align: center;
+    }
+   .grid-container{
+       grid-template-columns: auto auto;
+
+   }
+   .description{
+       text-align: center;
+   }
+  .grid-container2{
+      grid-template-columns: auto auto;
+      margin-right: 100px;
+  }
+  .main-heading{
+      text-align: center;
+  }
+  .footer{
+      width: 1000px;
+  }
+    }
